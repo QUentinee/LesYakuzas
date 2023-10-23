@@ -5,6 +5,12 @@ public class Humain {
 	private String boisson_fav;
 	private int argent;
 	
+	public Humain(String nom, String boisson_fav, int argent) {
+		 this.nom = nom;
+		 this.boisson_fav = boisson_fav;
+		 this.argent = argent;
+	}
+	
 	public String getNom() {
 		return nom;
 	}
@@ -12,7 +18,7 @@ public class Humain {
 		return argent;
 	}
 	public void parler(String texte) {
-		System.out.println(texte);
+		System.out.println("(" + this.nom + ") - " + texte);
 	}
 	public void direBonjour() {
 		parler("Bonjour ! Je m'appelle " + this.nom + "et j'aime boire du " + this.boisson_fav);

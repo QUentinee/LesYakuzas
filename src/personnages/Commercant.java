@@ -11,7 +11,8 @@ public class Commercant extends Humain{
 		return this.getArgent();
 	}
 	public void recevoir(int argent) {
-		this.recevoir(argent);
+		this.gagnerArgent(argent);
+		this.parler(argent + " sous! Je te remercie généreux donateur!");
 	}
 	
 }

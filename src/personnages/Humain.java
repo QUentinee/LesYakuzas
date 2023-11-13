@@ -17,6 +17,7 @@ public class Humain {
 		 this.nom = nom;
 		 this.boisson_fav = boisson_fav;
 		 this.argent = argent;
+		 
 	}
 	
 	public String getNom() {

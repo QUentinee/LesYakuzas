@@ -1,10 +1,10 @@
 package personnages;
 
-public class yakuza extends Humain {
+public class Yakuza extends Humain {
 	private String clan;
 	protected int reputation;
 
-	public yakuza(String nom, String boisson_fav, int argent, String clan) {
+	public Yakuza(String nom, String boisson_fav, int argent, String clan) {
 		super(nom, boisson_fav, argent);
 		this.clan = clan;
 		this.reputation = 4;

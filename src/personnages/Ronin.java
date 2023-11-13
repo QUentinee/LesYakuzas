@@ -11,7 +11,7 @@ public class Ronin extends Humain{
 		parler(beneficiaire.getNom() + " prend ces " + don + " sous.");
 		beneficiaire.recevoir(don);
 	}
-	public void provoquer(yakuza adversaire) {
+	public void provoquer(Yakuza adversaire) {
 		int force = 2 * (this.honneur);
 		if(force >= adversaire.reputation) {
 			this.gagnerArgent(adversaire.getArgent());
